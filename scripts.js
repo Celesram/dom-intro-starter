@@ -15,8 +15,8 @@ for (let image of images){
 }
 
 //Class NAme sections
-set med-bluw spans to #3c5e73
-set light bluw spans to :7c9EA6
+// set med-blue spans to #3c5e73
+// set light blue spans to :7c9EA6
 
 let medBlueSpans = document.getElementsByClassName("med-blue");
 
@@ -26,6 +26,25 @@ for (let span of ltBlueSpans){
     span.computedStyleMap.color ="#7c9EA6";
 }
 
-for (let span of medBluwSpanss){
+for (let span of medBlueSpanss){
     span.style.color = "#3c5E73"
 }
+
+//selecting group with thr CSS selector
+let colors = ["#283040","#3C5E73","#7C9EA6","#D9BCA3","#F2DCC9"];
+
+let svgs = document.querySelectorAll("#svgs svgs");
+
+// console.log(svgs);
+//iterate trough te svg collection and csngr color of each
+for (let i = 0; i < svgs.length; i++){
+    svgs[i].style.stroke = colors [i];
+})
+//individual element with css selector\
+document.querySelector(".bold").style.color = "#7C9EA6";
+
+document.querySelector (".content_list li:fort-Of Type").textContent =" this is a new list item";
+
+docuemnt.querySelectorAll(".content_list li")[2]. innerHTML += "<strong>Prof. Barrent </strong">;
+
+document.querySelector("remove a").removeAttribute("hidden");
